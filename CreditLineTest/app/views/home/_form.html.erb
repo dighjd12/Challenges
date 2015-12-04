@@ -1,0 +1,26 @@
+<%= form_tag({controller: "home", action: "drawMoney"}) do %>
+  <h1> Draw Out </h1>
+    <%= number_field_tag :draw, min: 1, max:1000 %>
+    <%= date_field_tag :customDate %>
+  <%= submit_tag "Save" %>
+<% end %>
+
+<% if flash[:msg] %>
+  <div class="message"><%= flash[:msg] %></div>
+<% end %>
+
+<%= form_tag({controller: "home", action: "payMoney"}, method: "post") do %>
+  <h1> Pay Back </h1>
+  <%= number_field_tag :pay, min: 1, max:1000 %>
+  <%= date_field_tag :customDate %>
+  <%= submit_tag "Save" %>
+<% end %>
+
+<% if flash[:msg2] %>
+  <div class="message"><%= flash[:msg2] %></div>
+<% end %>
+
+<%= form_tag({controller: "home", action: "calcInterest"}, method: "get") do %>
+  <h1> It's day 30! Calculate Interest </h1>
+  <%= submit_tag "Save" %>
+<% end %>

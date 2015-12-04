@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @credit.userId %>
+</p>
+
+<p>
+  <strong>Currlimit:</strong>
+  <%= @credit.currLimit %>
+</p>
+
+<p>
+  <strong>Dateupdated:</strong>
+  <%= @credit.dateUpdated %>
+</p>
+
+<p>
+  <strong>Totalinterest:</strong>
+  <%= @credit.totalInterest %>
+</p>
+
+<p>
+  <strong>Principal:</strong>
+  <%= @credit.principal %>
+</p>
+
+<%= link_to 'Edit', edit_credit_path(@credit) %> |
+<%= link_to 'Back', credits_path %>

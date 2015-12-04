@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  userId: MyString
+  currLimit: 1.5
+  dateUpdated: 2015-12-03
+  totalInterest: 1.5
+  principal: 1.5
+
+two:
+  userId: MyString
+  currLimit: 1.5
+  dateUpdated: 2015-12-03
+  totalInterest: 1.5
+  principal: 1.5

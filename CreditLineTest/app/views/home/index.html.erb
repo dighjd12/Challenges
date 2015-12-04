@@ -1,0 +1,33 @@
+<h1>Simulate this credit_line with one user</h1>
+
+<p>Current Credit</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @credit.userId %>
+</p>
+
+<p>
+  <strong>Currlimit:</strong>
+  <%= @credit.currLimit %>
+</p>
+
+<p>
+  <strong>Totalinterest:</strong>
+  <%= @credit.totalInterest %>
+</p>
+
+<p>
+  <strong>Principal:</strong>
+  <%= @credit.principal %>
+</p>
+
+<p>
+  <strong>You have to pay back:</strong>
+  <%= @paybackAmount %>
+</p>
+
+
+<%= render 'form' %>
+
+<br>
